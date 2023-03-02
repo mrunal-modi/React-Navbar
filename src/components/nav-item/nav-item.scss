@@ -1,0 +1,17 @@
+ul.navbar-nav{
+  list-style: none;
+  flex-direction: row;
+  .nav-item{
+      padding: 5px 15px;
+      .nav-link{
+          color: #686868;
+          text-decoration: none;
+          text-transform: capitalize;
+          size: 25px;
+          // font-weight: bold;
+          &:hover{
+              color: #000;
+          }
+      }
+  }
+}
