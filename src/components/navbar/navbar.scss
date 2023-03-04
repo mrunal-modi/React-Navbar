@@ -5,4 +5,24 @@
     align-items: center;
     background-color: clr(background-color);
     color: clr(text-color);
+    @media (max-width: 986px) {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        max-height: 42px;
+        position: relative;
+        .navbar{
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            width: 100%;
+            .navbar-nav{
+                flex-direction: column;
+            }
+        }
+        .logo{
+            width: 100%;
+        }
+    }
 }
