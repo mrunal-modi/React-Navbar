@@ -1,5 +1,28 @@
+@import "../../config/navbar-config.scss";
+
 .dropdown {
   position: relative;
+
+  .label{
+    display: flex;
+    align-items: center;
+    &:after
+  {
+    border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+  margin-left: 10px;
+	// left: 0.15em;
+	// position: relative;
+	// top: 0.15em;
+	// transform: rotate(-45deg);
+  transform: rotate(135deg);
+	vertical-align: top;
+	width: 0.45em;
+  }
+  }
 
   .label:hover + .dropdown-items, 
   .dropdown-items:hover
@@ -15,7 +38,7 @@
     position: absolute;
     overflow: hidden;
     background: #ffffff;
-    border-radius: 5px;
+    border-radius: 0px;
     box-sizing: border-box;
     box-shadow: 0px 0px 10px -3px #bdbdbd;
     .nav-item{
@@ -26,9 +49,9 @@
         white-space: nowrap;
         color: #000;
         &:hover{
-          color: #000;
+          color: clr(text-color);
           text-decoration: unset;
-          background: #f5f5f5;
+          background: clr(background-color);
 
         }
       }

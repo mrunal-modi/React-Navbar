@@ -1,4 +1,4 @@
-export const logo = null;
+export const logo = "/images/logo.png";
 export const brandName = "MyBrand";
 
 export const nav = [

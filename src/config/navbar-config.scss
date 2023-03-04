@@ -1,0 +1,20 @@
+$colours: (
+  // text-color: #ffffff,
+  // background-color: #2c6bcc,
+  text-color: #000,
+  background-color: #f2f2f2,
+);
+
+@function clr($name) {
+  $color: map-get($colours, $name);
+  @return $color;
+}
+
+@each $color, $value in $colours {
+  .#{$color}Color {
+    color: clr($color)
+  }
+  :root {
+    --#{$color}Color: #{$value}
+  }
+}

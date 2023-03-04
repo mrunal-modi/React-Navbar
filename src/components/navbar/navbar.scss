@@ -1,9 +1,8 @@
+@import "../../config/navbar-config.scss";
+
 .Navbar{
     display: flex;
     align-items: center;
-    // position: fixed;
-    // left: 0;
-    // right: 0;
-    // top: 0;
-    background-color: #f2f2f2;
+    background-color: clr(background-color);
+    color: clr(text-color);
 }
