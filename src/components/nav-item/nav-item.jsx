@@ -4,12 +4,11 @@ import { nav } from "../../config/navbar-config";
 import { Fragment } from "react";
 const NavItem = () => {
   return (
-    <nav className="navbar container">
+    <nav className="navbar">
       <ul className="navbar-nav ml-auto">
-        {nav.map((el, i) =>
-        <Fragment key={i}>
-          {
-            el.dropdownItems ? (
+        {nav.map((el, i) => (
+          <Fragment key={i}>
+            {el.dropdownItems ? (
               <Dropdown
                 className="nav-item"
                 label={el.label}
@@ -22,11 +21,9 @@ const NavItem = () => {
                   {el.label}
                 </a>
               </li>
-            )
-          }
+            )}
           </Fragment>
-        )}
-        
+        ))}
       </ul>
     </nav>
   );
